@@ -30,7 +30,7 @@ function projetos(section) {
           <h3>Feprocic</h3>
           <div class="img-wrapper">
             <img
-              src="img/Captura de tela 2025-10-21 170240.PNG"
+              src="img/feprocic.PNG"
               alt="Imagem do Projeto"
             />
             <div class="buttons">
@@ -66,4 +66,5 @@ function projetos(section) {
 }
 
 export { projetos };
+
 
