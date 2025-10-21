@@ -31,7 +31,7 @@ function projetos(section) {
           <div class="img-wrapper">
             <img
               src="img/Captura de tela 2025-10-21 170240.PNG"
-              alt="Imagem da empresa PixelTech"
+              alt="Imagem do Projeto"
             />
             <div class="buttons">
               <a href="https://www.instagram.com/cearapaidegua23?igsh=MXEyMnN5dmR5MXAzaA==" target="_blank" title="Ver no Instagram">
@@ -66,3 +66,4 @@ function projetos(section) {
 }
 
 export { projetos };
+
