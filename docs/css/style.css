@@ -1,3 +1,12 @@
+/*
+=========================================================
+PORTFÓLIO - VICTOR SILVA
+Arquivo: style.css
+Descrição: Estilos gerais do portfólio + melhorias de responsividade.
+Cada seção está comentada e organizada por área da página.
+=========================================================
+*/
+
 
 html{
     overflow-x: hidden;
@@ -1109,4 +1118,71 @@ button.toggler-menu{
     color: white;
     font-stretch: 14px;
     margin: 0;
+}
+
+/* =========================================================
+   RESPONSIVIDADE GERAL (AJUSTES PARA CELULARES E TABLETS)
+   ========================================================= */
+
+/* Ajuste de fontes e espaçamentos em telas menores */
+@media (max-width: 991px) {
+  body {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .box h1 {
+    font-size: 48px;
+  }
+  .about-me img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+  .info {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+
+/* Layout empilhado para seções de duas colunas (sobre, skills, etc.) */
+@media (max-width: 767px) {
+  .col-lg-4, .col-lg-7, .col-md-6 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 30px;
+  }
+  .banner .me {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6; /* Mantém visível e legível no mobile */
+  }
+  .top-fixed .info {
+    display: none; /* Remove barra superior com contato no mobile */
+  }
+  .about-me .social-icons a {
+    margin: 5px;
+  }
+  footer .nav a {
+    font-size: 18px;
+  }
+}
+
+/* Ajuste do menu lateral para versão mobile */
+@media (max-width: 600px) {
+  .header-left {
+    width: 60px;
+  }
+  .header-left .top a {
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .nav-link i {
+    font-size: 26px;
+  }
 }
